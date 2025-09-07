@@ -1,5 +1,5 @@
 # Devops-Journey
-
+## Las imagenes que voy subiendo tambien las voy a subir a DockerHub : https://hub.docker.com/repository/docker/falconerr88/imagenes-pruebas/general
 aca voy a ir subiendo todo lo que hago mientras me preparo para ser DevOps
 
 el 7/9/2025 cree un servidor con nginx y otro con nodejs y javascripts para ir aprendiendo los comandos de docker y aprendiendo a hacer dockerfiles 
