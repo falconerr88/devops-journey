@@ -1,26 +1,11 @@
-const http = require('http');
-
+const express = require("express");
+const app = express();
 const PORT = process.env.PORT || 3000;
 
-const html = `
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Mi Página Node.js</title>
-</head>
-<body>
-    <h1><!-- Creando pagina con NODE.JS --></h1>
-    <p><!-- creando mi segundo contenedor esta vez con nosejs  --></p>
-</body>
-</html>
-`;
-
-const server = http.createServer((req, res) => {
-    res.writeHead(200, {'Content-Type': 'text/html'});
-    res.end(html);
+app.get("/", (req, res) => {
+  res.send("Hola Thiago! 🚀 Probando un servidor con nodeJS para aprender docker");
 });
 
-server.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
+app.listen(PORT, () => {
+  console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });
