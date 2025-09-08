@@ -1,17 +1,17 @@
 
 services: 
-  web:
+  nginx:
     build: ./pagina-con-nginx
     ports:
       - "8080:80"
 
-  api:
+  nodejs:
     build: ./pagina-con-nodejs
     ports:
       - "3001:3000"
     
 
-  python-service:
+  flask:
     build: ./pagina-con-pythonflask
     ports:
       - "5000:5000"
